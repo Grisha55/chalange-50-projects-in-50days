@@ -40,6 +40,10 @@ body {
   transition: transform 0.5s linear;
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+} 
+
 .circle button {
   cursor: pointer;
   position: absolute;
@@ -63,6 +67,7 @@ body {
 
 .circle button#close {
   top: 60%;
+  left: 40%;
   transform: rotate(90deg);
   transform-origin: top left;
 }
@@ -117,7 +122,12 @@ nav ul li + li + li {
 }
 
 .content h1 {
+  font-size: 36px;
   margin: 0;
+}
+
+.content h3 {
+  font-size: 24px;
 }
 
 .content small {
@@ -129,3 +139,4 @@ nav ul li + li + li {
   color: #333;
   line-height: 1.5;
 }
+
